@@ -4,33 +4,28 @@
 		<meta http-equiv="X-UA-Compatible" content="IE-edge">
 		<meta charset="utf-8">
 		<title>Dataviz</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<link rel="stylesheet" media="screen" href="../css/style.css">
-		<script src="../js/exo1.js"></script>
 	</head>
 
 	<body>
 		
 		<div id="wrapper">
 			<div id="header" class="d-flex container-fluid mb-0 p-0">
-				
+				<h1 class="container">Thierry WEN</h1>
 			</div>
 
 			<div id="navbar" class="container-fluid p-0">
 				<nav class="navbar-nav collapse navbar-collapse navbar-expand-lg navbar-dark bg-dark d-flex m-0 py-0 justify-content-around">
-					<a href="#" class="nav-link col">Exo 1</a>
+					<a href="" class="nav-link col">Accueil</a>
+					<a href="exo1.html" class="nav-link col">Exo 1 - Wikidata</a>
+                    <a href="exo2.html" class="nav-link col">Exo 2 - Ramen ratings</a>
+                    <a href="exo3.html" class="nav-link col">Exo 3 - Image</a>
 				</nav>
 			</div>
 
 			<div id="content" class="container">
-				<a href="https://query.wikidata.org/#SELECT%20%3Fr_alisateur%20%3Ftitre%20%3Fgenre%20%3FgenreLabel%20%3Fnature_de_l__l_ment%20%3Fnature_de_l__l_mentLabel%20%3Fdate_de_publication%20%3Fimage_du_logotype%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Fr_alisateur%20wdt%3AP57%20wd%3AQ335080%3B%0A%20%20%20%20wdt%3AP1476%20%3Ftitre%3B%0A%20%20%20%20wdt%3AP136%20%3Fgenre%3B%0A%20%20%20%20wdt%3AP31%20%3Fnature_de_l__l_ment%3B%0A%20%20%20%20wdt%3AP577%20%3Fdate_de_publication%3B%0A%20%20%20%20wdt%3AP154%20%3Fimage_du_logotype.%0A%20%20%0A%7D%0AORDER%20BY%20%28%3Fdate_de_publication%29%0ALIMIT%20200%0A">Lien du dataset</a>
-
-				<h1>Table</h1>
-				<iframe style="width: 80vw; height: 100vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3Fr_alisateur%20%3Ftitre%20%3Fgenre%20%3FgenreLabel%20%3Fnature_de_l__l_ment%20%3Fnature_de_l__l_mentLabel%20%3Fdate_de_publication%20%3Fimage_du_logotype%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Fr_alisateur%20wdt%3AP57%20wd%3AQ335080%3B%0A%20%20%20%20wdt%3AP1476%20%3Ftitre.%0A%20%20%3Fr_alisateur%20wdt%3AP136%20%3Fgenre.%0A%20%20%3Fr_alisateur%20wdt%3AP31%20%3Fnature_de_l__l_ment.%0A%20%20%3Fr_alisateur%20wdt%3AP577%20%3Fdate_de_publication.%0A%20%20%3Fr_alisateur%20wdt%3AP154%20%3Fimage_du_logotype.%0A%7D%0A%0AORDER%20BY%20%3Fdate_de_publication%0ALIMIT%20200" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
-				<h1>Image grid</h1>
-				<iframe style="width: 80vw; height: 100vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20%3Fr_alisateur%20%3Ftitre%20%3Fgenre%20%3FgenreLabel%20%3Fnature_de_l__l_ment%20%3Fnature_de_l__l_mentLabel%20%3Fdate_de_publication%20%3Fimage_du_logotype%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Fr_alisateur%20wdt%3AP57%20wd%3AQ335080%3B%0A%20%20%20%20wdt%3AP1476%20%3Ftitre%3B%0A%20%20%20%20wdt%3AP136%20%3Fgenre%3B%0A%20%20%20%20wdt%3AP31%20%3Fnature_de_l__l_ment%3B%0A%20%20%20%20wdt%3AP577%20%3Fdate_de_publication%3B%0A%20%20%20%20wdt%3AP154%20%3Fimage_du_logotype.%0A%20%20%0A%7D%0AORDER%20BY%20(%3Fdate_de_publication)%0ALIMIT%20200%0A%0A%23defaultView%3AImageGrid" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
-				<h1>Timeline</h1>
-				<iframe style="width: 80vw; height: 100vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20%3Fr_alisateur%20%3Ftitre%20%3Fgenre%20%3FgenreLabel%20%3Fnature_de_l__l_ment%20%3Fnature_de_l__l_mentLabel%20%3Fdate_de_publication%20%3Fimage_du_logotype%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Fr_alisateur%20wdt%3AP57%20wd%3AQ335080%3B%0A%20%20%20%20wdt%3AP1476%20%3Ftitre%3B%0A%20%20%20%20wdt%3AP136%20%3Fgenre%3B%0A%20%20%20%20wdt%3AP31%20%3Fnature_de_l__l_ment%3B%0A%20%20%20%20wdt%3AP577%20%3Fdate_de_publication%3B%0A%20%20%20%20wdt%3AP154%20%3Fimage_du_logotype.%0A%20%20%0A%7D%0AORDER%20BY%20(%3Fdate_de_publication)%0ALIMIT%20200%0A%23defaultView%3ATimeline" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+				
 			</div>
 
 			<div id="footer" class="container-fluid p-0"></div>
